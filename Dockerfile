@@ -17,13 +17,5 @@ RUN curl --silent --location https://deb.nodesource.com/setup_${NODE_VERSION} | 
     npm install -g --no-optional npm bower && \
     npm install -g --no-optional build npm-cache gulp
 
-RUN wget -qO- -O /tmp/phantomjs.tbz https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-${PHANTOMJS_VERSION}.tar.bz2 && \
-    tar xf /tmp/phantomjs.tbz -C /tmp && \
-    mv /tmp/phantomjs-${PHANTOMJS_VERSION}/bin/phantomjs /usr/local/bin/phantomjs
-
-RUN pip -q install ansible==1.9.4
-
-# cleanup
-RUN rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/* && apt-get clean
 
 CMD []
