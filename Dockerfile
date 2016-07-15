@@ -1,6 +1,6 @@
 FROM skorochkin/java-gradle:latest
 
-ENV NODE_VERSION="6.2" \
+ENV NODE_VERSION="0.12" \
     # hotfix for ultra slow npm install on Ubuntu
     NPM_CONFIG_REGISTRY="http://registry.npmjs.org/" \
     PHANTOMJS_VERSION=2.1.1-linux-x86_64 \
