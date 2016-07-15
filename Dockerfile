@@ -47,7 +47,7 @@ RUN apt-get -y install gradle
 #RUN add-apt-repository ppa:chris-lea/node.js
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs
+RUN sudo apt-get install -y nodejs
 
 RUN apt-get update
 
